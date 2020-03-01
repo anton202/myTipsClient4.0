@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::beffore,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px;
+}
+
+body {
+  background-image: linear-gradient(150deg, #a0deec, #3399cc);
+  height: 100vh;
+}
