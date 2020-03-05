@@ -4,8 +4,10 @@
     
     &__btns{
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding-top: 3rem;
+        width: 90%;
+        margin: auto;
     }
 }
 
