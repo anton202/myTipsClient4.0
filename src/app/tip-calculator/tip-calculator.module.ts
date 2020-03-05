@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { SharedModule } from '../shared/shared.module';
 
 import { TipCalculatorComponent } from './tip-calculator.component';
+import { TotalTipsComponent } from './total-tips/total-tips.component';
 
 
 
 @NgModule({
-  declarations: [TipCalculatorComponent],
+  declarations: [TipCalculatorComponent, TotalTipsComponent],
   imports: [
     CommonModule,
     SharedModule

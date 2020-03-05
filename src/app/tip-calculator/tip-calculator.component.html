@@ -2,7 +2,10 @@
 
 <div class="tipCalculator">
     <div class="date">
-        {{ date | date:'d/M/yyyy' }} 
-        {{getDay()}}
+      <span class="date__day">יום {{getDay()}}</span>
+        <span class="date__day">{{ date | date:'d/M/yyyy' }}</span> 
     </div>
+    <h1 class="tipCalculator__title">מחשבון טיפים</h1>
+
+    <app-total-tips></app-total-tips>
 </div>
