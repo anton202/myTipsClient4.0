@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConstantPool } from '@angular/compiler';
 
 @Component({
   selector: 'app-tip-calculator',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class TipCalculatorComponent implements OnInit {
   date:Date = new Date();
   days:Array<string> = ['ראשון','שני','שלישי','רביעי','חמישי','שישי','שבת'];
-
+  totalTips: number;
   constructor() { }
 
   ngOnInit(): void {
@@ -16,6 +17,10 @@ export class TipCalculatorComponent implements OnInit {
 
   getDay(){
     return this.days[this.date.getDay()];
+  }
+
+  onTipEnter(tips){
+    this.totalTips = tips
   }
 
 }

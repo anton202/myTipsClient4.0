@@ -1,3 +1,5 @@
 <div class="totalTip">
-    <input class="totalTip__tip" type="number" placeholder="0.00&#8362;">
+    <input class="totalTip__tip"  type="number" [(ngModel)] ='tipsAmount'  placeholder="{{0.00 | currency : 'ILS'}}" #totalTip>
 </div>
+
+<!-- &#8362; -->
