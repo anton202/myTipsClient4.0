@@ -1,0 +1,32 @@
+<div class="shiftInfo">
+  <div class="shiftInfo__waiterName">
+    <select name="" id="">
+      <option value="anton">אנטון</option>
+      <option value="michael">מיכאל</option>
+    </select>
+  </div>
+  <div class="shiftInfo__parameters">
+    <div class="shiftInfo__parameters__parameter">
+      <span>הפרשה למעסיק</span>
+      <span class="shiftInfo__parameters__parameter__value">{{
+        employerTax | currency: "ILS"
+      }}</span>
+    </div>
+    <div class="shiftInfo__parameters__parameter">
+      <span>סה"כ טיפים</span>
+      <span class="shiftInfo__parameters__parameter__value">{{
+        totalTip | currency: "ILS"
+      }}</span>
+    </div>
+    <div class="shiftInfo__parameters__parameter">
+      <span>סה"כ שעות</span>
+      <input 
+        class="shiftInfo__parameters__parameter__hours"
+        placeholder="0"
+        type="number"
+        name=""
+        id=""
+      />
+    </div>
+  </div>
+</div>
