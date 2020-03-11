@@ -1,22 +1,50 @@
-.tipCalculator{
-    padding-top: 2rem;
+.tipCalculator {
+  padding-top: 2rem;
 
-    &__title{
-        text-align: center;
-        font-size: 3.5rem;
-        font-weight: 600;
-    }
+  &__title {
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  &__addShiftBtn {
+    font-size: 5rem;
+    display: block;
+    width: 10%;
+    margin: auto;
+    text-align: center;
+  }
+  &__lineDevider {
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    margin-top: 2rem;
+  }
 }
 
-.date{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
-    font-weight: 600;
+.date {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  font-weight: 600;
 
-    &__day{
-      display: block;  
-    }
+  &__day {
+    display: block;
+  }
+}
+
+.summary {
+  padding-top: 2rem;
+  direction: rtl;
+  width: 90%;
+  margin: auto;
+  font-size: 2rem;
+  font-weight: 600;
+
+  &__allocations {
+    list-style: none;
+    line-height: 3rem;
+    padding-bottom: 2rem;
+  }
 }
