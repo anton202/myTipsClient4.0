@@ -1,5 +1,17 @@
+@import '../../scss/responsivnes';
+
 .tipCalculator {
   padding-top: 2rem;
+  @include responsive(break1){
+      height: 100vh;
+  }
+
+  @include responsive(break3){
+    width: 80%;
+    margin: auto;
+}
+
+//   height: 100vh;
 
   &__title {
     text-align: center;
@@ -28,6 +40,10 @@
   justify-content: space-between;
   font-size: 1.5rem;
   font-weight: 600;
+
+  @include responsive(break3){
+    width: 80%;
+}
 
   &__day {
     display: block;
