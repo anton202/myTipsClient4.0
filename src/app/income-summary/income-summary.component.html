@@ -1,0 +1,22 @@
+<div class="incomeSummary">
+    <div class="incomeSummary__month">
+       <span> {{getMonth()}} </span>
+    </div>
+
+    <div class="incomeSummary__monthlySummary">
+        <div>
+            <span>סה"כ טיפים</span>
+            <span class="incomeSummary__monthlySummary__value">{{1560 | currency: "ILS" :'symbol' :'4.1'}}</span>
+        </div>
+        <div>
+            <span>ממוצע לשעה</span>
+            <span class="incomeSummary__monthlySummary__value">{{57.6 | currency: "ILS" :'symbol' :'2.1'}}</span>
+        </div>
+        <div>
+            <span>סה"כ שעות</span>
+            <span class="incomeSummary__monthlySummary__value">120</span>
+        </div>
+    </div>
+    <hr class="incomeSummary__splitLine">
+    <app-shift-income></app-shift-income>
+</div>

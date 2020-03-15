@@ -1,0 +1,35 @@
+.incomeSummary {
+  direction: rtl;
+  padding-top: 2rem;
+  width: 90%;
+  margin: auto;
+  &__month {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+
+  &__splitLine {
+    margin-top: 1rem;
+    border: 0;
+    height: 1.3px;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(255, 255, 255, 0.75),
+      rgba(0, 0, 0, 0)
+    );
+  }
+
+  &__monthlySummary {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    &__value {
+      display: block;
+      font-weight: 800;
+      font-size: 2.5rem;
+      text-align: center;
+    }
+  }
+}

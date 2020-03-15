@@ -1,0 +1,13 @@
+.shiftIncome__dailyIncome{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    padding-top: 1.2rem;
+
+    &__value{
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+    }
+}
+

@@ -7,6 +7,7 @@ import { TipCalculatorModule } from './tip-calculator/tip-calculator.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
+import {IncomeSummaryModule } from './income-summary/income-summary.module';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     AuthModule,
     SharedModule,
-    TipCalculatorModule
+    TipCalculatorModule,
+    IncomeSummaryModule
   ],
   providers: [],
   bootstrap: [AppComponent]
