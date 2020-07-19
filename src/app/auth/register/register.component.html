@@ -1,7 +1,16 @@
 <app-nav></app-nav>
 <div class="register">
+    <h1 class="register__heading">צור משתמש חדש:</h1>
     <form class="register__userForm">
-        <input type="text" placeholder="שם מסעדה">
+        <input list="resturant-name" type="text" placeholder="שם מסעדה">
+        <datalist class="register__userForm__resturantsNames" id="resturant-name">
+            <--! implement ngFor on the option element -->
+            <option value="קפה שניאור">
+            <option value="איזו ובבט">
+            <option value="ליב קפה">
+            <option value="פלורנטין 10">
+            <option value="קסבה">
+        </datalist>
         <hr class="splitLine">
         <input type="text" name="" placeholder="שם משתמש">
         <hr class="splitLine">
@@ -9,5 +18,6 @@
         <hr class="splitLine">
         <input class="register__userForm__password" type="password" name="" placeholder="אמת סיסמא">
         <hr class="splitLine">
+        <button class="register__userForm__createUser">צור משתמש</button>
     </form>
 </div>

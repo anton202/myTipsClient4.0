@@ -1,16 +1,35 @@
 .register{
     height: 100vh;
-    display: flex;
-    justify-content: center;
+    direction: rtl;
+    //display: flex;
+    //justify-content: center;
+    //flex-direction: column;
    // align-items: center;
 
+    &__heading{
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
     &__userForm{
-        margin-top: 40%;
+         margin:auto;
         width: 80%;
         display: flex;
         flex-direction: column;
 
-       
+        &__createUser{
+            margin-top: 8%;
+            letter-spacing: 0.1rem;
+             font-size: 1.8rem;
+             border-radius: 3rem;
+             height: 4rem;
+             color: white;
+             font-weight: 600;
+             border-style: none;
+             box-shadow: 2px 2px 0 0 gray;
+            background-color: #7d71dd;
+        }
 
         & > input{
             direction: rtl;
@@ -33,8 +52,10 @@
     }
 }
 
+
+
 .splitLine {
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
     border: 0;
     height: 1.3px;
     background-image: linear-gradient(
