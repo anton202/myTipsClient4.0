@@ -1,0 +1,38 @@
+@use "../../../scss/userForm";
+@use "../../../scss/splitLine";
+
+.container{
+    height: 100vh;
+}
+
+.login{
+    width: 80%;
+    margin: auto;
+    &__heading{
+        text-align: center;
+    }
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__input{
+            @include userForm.formStyle;
+
+            &::placeholder{
+                @include userForm.placeHolder;
+            }
+        }
+
+        &__submit-btn{
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+.splitLine{
+    @include splitLine.splitLine;
+}

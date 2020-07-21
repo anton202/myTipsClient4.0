@@ -1,0 +1,14 @@
+@mixin formStyle{
+             direction: rtl;
+            background-color: transparent;
+            border: none;
+            text-align: center;
+            font-size: 1.8rem;
+            color: white;
+            outline: none;
+}
+
+@mixin placeHolder{
+    color: white;
+    letter-spacing: 0.1rem;
+}
