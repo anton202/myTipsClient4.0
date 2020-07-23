@@ -19,8 +19,8 @@
     display: flex;
     align-content: center;
     direction: rtl;
+
     &__selectName {
-    
       text-align: center;
       display: block;
       margin: auto;
@@ -30,6 +30,9 @@
       background-color: transparent;
       border-width: 0 0 1.5px 0;
       border-color: white;
+      font-size: 1.7rem;
+      font-weight: 600;
+
       &:first-child{
         color: white;
       }
@@ -54,6 +57,7 @@
       text-align: center;
       background-color: transparent;
       border-width: 0 0 1.5px 0;
+      border-color: white;
       &::placeholder {
         color: rgba(255, 255, 255, 0.3);
       }
@@ -69,4 +73,8 @@
 span {
   display: block;
   text-align: center;
+}
+
+.delete-shift{
+  font-size: 2rem;
 }

@@ -1,5 +1,6 @@
 @use "../../../scss/userForm";
 @use "../../../scss/splitLine";
+@use "../../../scss//purpleBtn";
 
 .container{
     height: 100vh;
@@ -10,6 +11,9 @@
     margin: auto;
     &__heading{
         text-align: center;
+        font-size: 3rem;
+        margin-top: 20%;
+        margin-bottom: 15%;
     }
 
     &__form{
@@ -29,6 +33,7 @@
         &__submit-btn{
             display: block;
             width: 100%;
+            @include purpleBtn.purpleBtn;
         }
     }
 }

@@ -3,7 +3,15 @@
     <section class="login">   
         <h1 class="login__heading">התחבר</h1>
         <form class="login__form" >
-            <input class="login__form__input" type="text" name="resturant name" placeholder="שם מסעדה">
+            <input list="resturant-name" class="login__form__input" type="text" name="resturant name" placeholder="שם מסעדה">
+            <datalist class="register__userForm__resturantsNames" id="resturant-name">
+                <--! implement ngFor on the option element -->
+                <option value="קפה שניאור">
+                <option value="איזו ובבט">
+                <option value="ליב קפה">
+                <option value="פלורנטין 10">
+                <option value="קסבה">
+            </datalist>
             <hr class="splitLine">
             <input class="login__form__input" type="text" name="userName" placeholder="שם משתמש">
             <hr class="splitLine">

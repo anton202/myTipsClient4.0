@@ -1,5 +1,6 @@
 <div class="totalTip">
-    <input class="totalTip__tip"  type="number" [(ngModel)] ='tipsAmount'  placeholder="{{0.00 | currency : 'ILS'}}" #totalTip>
+    <input class="totalTip__tip" matInput type="text" placeholder="{{0.00 | currency : 'ILS'}}" [ngModel]="tipsAmount |  currency : 'ILS':'symbol':'2.0'" [ngModelOptions]="{updateOn:'blur'}" 
+      (ngModelChange)="tipsAmount=$event" #totalTip/>
 </div>
 
-<!-- &#8362; -->
+
