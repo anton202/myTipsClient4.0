@@ -1,8 +1,7 @@
 <div class="home">
   <div class="header">
-    <app-nav></app-nav>
     <div class="header__btns">
-      <button class="btn btn--moneyCounter">סופר שטרות</button>
+      <button class="btn btn--moneyCounter"><a [routerLink]="['/tip-calculator']" routerLinkActive="router-link-active" >סופר שטרות</a></button>
       <button class="btn btn--tipCalculator">מחשבון טיפים</button>
     </div>
   </div>

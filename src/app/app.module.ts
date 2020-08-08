@@ -1,25 +1,26 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AuthModule } from './auth/auth.module';
-import { SharedModule } from './shared/shared.module';
+import { AppRoutingModule } from './app-routing.module';
+import {IncomeSummaryModule } from './income-summary/income-summary.module';
+
 import { TipCalculatorModule } from './tip-calculator/tip-calculator.module';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import {IncomeSummaryModule } from './income-summary/income-summary.module';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AuthModule,
-    SharedModule,
     TipCalculatorModule,
     IncomeSummaryModule
   ],
